@@ -1,0 +1,33 @@
+{
+  "name": "three-js-fix-rgba-depth",
+  "version": "1.0.0",
+  "author": "Max Godefroy <max@godefroy.net>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "three-full": "16.0.1"
+  },
+  "devDependencies": {
+    "fs-extra": "^7.0.1",
+    "rollup": "^0.67.1",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-terser": "^3.0.0",
+    "rollup-plugin-prettier": "^0.6.0"
+  },
+  "files": [
+    "src/*",
+    "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mcgode/three-js-fix-rgba-depth.git"
+  },
+  "browser": "./dist/browser/three-js-fix-rgba-depth.js",
+  "bugs": {
+    "url": "https://github.com/Mcgode/three-js-fix-rgba-depth/issues"
+  },
+  "homepage": "https://github.com/Mcgode/three-js-fix-rgba-depth#readme"
+}
