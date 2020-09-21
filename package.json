@@ -29,5 +29,7 @@
   "bugs": {
     "url": "https://github.com/Mcgode/three-js-fix-rgba-depth/issues"
   },
-  "homepage": "https://github.com/Mcgode/three-js-fix-rgba-depth#readme"
+  "homepage": "https://github.com/Mcgode/three-js-fix-rgba-depth#readme",
+  "description": "A script for fixing the RGBA depth packing, which had some precision issues, for revision 101 of three.js.",
+  "main": "build.js"
 }
