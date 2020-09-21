@@ -1,6 +1,6 @@
 {
   "name": "three-js-fix-rgba-depth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Max Godefroy <max@godefroy.net>",
   "license": "MIT",
   "scripts": {
@@ -31,5 +31,5 @@
   },
   "homepage": "https://github.com/Mcgode/three-js-fix-rgba-depth#readme",
   "description": "A script for fixing the RGBA depth packing, which had some precision issues, for revision 101 of three.js.",
-  "main": "build.js"
+  "main": "src/three-js-fix-rgba-depth.js"
 }

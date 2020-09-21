@@ -1,12 +1,12 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
-	typeof define === 'function' && define.amd ? define(factory) :
-	(factory());
-}(this, (function () { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('three-full')) :
+	typeof define === 'function' && define.amd ? define(['three-full'], factory) :
+	(global.THREEFixRGBADepth = factory(global.THREE));
+}(this, (function (threeFull) { 'use strict';
 
-	const THREE = import('three-full');
+	threeFull = threeFull && threeFull.hasOwnProperty('default') ? threeFull['default'] : threeFull;
 
-	if (THREE.REVISION !== "101")
+	if (threeFull.REVISION !== "101")
 	    console.error("RGBA Depth fix - Implemented for three.js revision 101. You are not using that revision.");
 
 	let vertexShader = /* glsl */`
@@ -101,7 +101,13 @@ void main() {
 }
 `;
 
-	THREE.ShaderLib.depth.vertexShader = vertexShader;
-	THREE.ShaderLib.depth.fragmentShader = fragmentShader;
+	threeFull.ShaderLib.depth.vertexShader = vertexShader;
+	threeFull.ShaderLib.depth.fragmentShader = fragmentShader;
+
+	var threeJsFixRgbaDepth = {
+
+	};
+
+	return threeJsFixRgbaDepth;
 
 })));

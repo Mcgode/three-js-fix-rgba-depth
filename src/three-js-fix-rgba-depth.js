@@ -1,4 +1,4 @@
-const THREE = import('three-full')
+const THREE = require('three-full')
 
 if (THREE.REVISION !== "101")
     console.error("RGBA Depth fix - Implemented for three.js revision 101. You are not using that revision.")
