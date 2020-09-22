@@ -1,6 +1,6 @@
 {
   "name": "three-js-fix-rgba-depth",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Max Godefroy <max@godefroy.net>",
   "license": "MIT",
   "scripts": {

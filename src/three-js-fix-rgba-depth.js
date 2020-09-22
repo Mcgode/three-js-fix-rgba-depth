@@ -95,5 +95,21 @@ void main() {
 }
 `
 
+// noinspection ES6ConvertVarToLetConst
+var THREEFixRGBADepth = {
+    oldLibShaders: {
+        vertexShader: THREE.ShaderLib.depth.vertexShader,
+        fragmentShader: THREE.ShaderLib.depth.fragmentShader
+    },
+    newLibShaders: {
+        vertexShader: vertexShader,
+        fragmentShader: fragmentShader
+    }
+}
+
 THREE.ShaderLib.depth.vertexShader = vertexShader;
 THREE.ShaderLib.depth.fragmentShader = fragmentShader;
+
+THREE.THREEFixRGBADepth = THREEFixRGBADepth
+
+module.exports = THREEFixRGBADepth

@@ -101,12 +101,24 @@ void main() {
 }
 `;
 
+	// noinspection ES6ConvertVarToLetConst
+	var THREEFixRGBADepth = {
+	    oldLibShaders: {
+	        vertexShader: threeFull.ShaderLib.depth.vertexShader,
+	        fragmentShader: threeFull.ShaderLib.depth.fragmentShader
+	    },
+	    newLibShaders: {
+	        vertexShader: vertexShader,
+	        fragmentShader: fragmentShader
+	    }
+	};
+
 	threeFull.ShaderLib.depth.vertexShader = vertexShader;
 	threeFull.ShaderLib.depth.fragmentShader = fragmentShader;
 
-	var threeJsFixRgbaDepth = {
+	threeFull.THREEFixRGBADepth = THREEFixRGBADepth;
 
-	};
+	var threeJsFixRgbaDepth = THREEFixRGBADepth;
 
 	return threeJsFixRgbaDepth;
 
