@@ -58,7 +58,7 @@ build({
     external: [ 'three-full' ],
 }, {
     format: 'umd',
-    name: 'THREEExtraBuiltInUniforms',
+    name: 'THREEFixRGBADepth',
     file: './dist/browser/three-js-fix-rgba-depth.min.js',
     globals: {
         'three-full' : 'THREE'
